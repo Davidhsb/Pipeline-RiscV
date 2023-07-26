@@ -8,13 +8,13 @@ entity memory_data is
     write_enable : in std_logic;
     clock        : in std_logic;
     data_in      : in std_logic_vector(31 downto 0);
-    data_out     : out std_logic_vector(32 downto 0);
+    data_out     : out std_logic_vector(32 downto 0)
   );
 end entity memory_data;
 
 architecture mem_arch of memory_data is
-  type mem_type is array (0 to (2**adress`length)-1) of std_logic_vector(data_in`range);
-  signal mem : mem_type;
+  type ram is array (0 to (2**adress`length)-1) of std_logic_vector(data_in`range);
+  signal mem : ram;
   signal read_adress : std_logic_vector(7 downto 0);
 
 begin
