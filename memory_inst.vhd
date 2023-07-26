@@ -5,13 +5,13 @@ use std.textio.all;
 
 entity memory_inst is
   port (
-    adress    : in std_logic_vector(7 downto 0);
+    address   : in std_logic_vector(7 downto 0);
     instr_out : out std_logic_vector(31 downto 0)
   );
 end entity memory_inst;
 
 architecture memI_arch of memory_inst is
-  type rom is array (0 to (2**adress`length)-1) of std_logic_vector(instr_out`range);
+  type rom is array (0 to (2**address`length)-1) of std_logic_vector(instr_out`range);
 
   impure function init_rom_hex return rom is
 
@@ -20,7 +20,7 @@ architecture memI_arch of memory_inst is
     variable rom_content : rom;
    
     begin
-    for i in 0 to ((2**adress`length)-1) loop
+    for i in 0 to ((2**address`length)-1) loop
       readline(text_file, text_line);
       hread(text_line, rom_content(i));
     end loop;
@@ -33,6 +33,6 @@ architecture memI_arch of memory_inst is
 
 begin
 
-  instr_out <= mem(to_integer(unsigned(adress))/4);
+  instr_out <= mem(to_integer(unsigned(address))/4);
 
 end memI_arch ;

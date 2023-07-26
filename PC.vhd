@@ -8,7 +8,7 @@ entity pc is
       pc_reset : in std_logic;
       pc_in    : in std_logic_vector(31 downto 0);
       pc_out   : out std_logic_vector(31 downto 0);
-      pc_out_adress: out std_logic_vector(7 downto 0)
+      pc_out_address: out std_logic_vector(7 downto 0)
   );
 end entity pc;
 
@@ -23,7 +23,7 @@ begin
     
     elsif (rising_edge(pc_clock)) then
       pc_out <= pc_in;
-      pc_out_adress <= pc_in(7 downto 0);
+      pc_out_address <= pc_in(7 downto 0);
         
     end if;
 end process;

@@ -3,14 +3,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 -- 4-bit Adder (ADDER_4)
-entity ADDER_4_Module is
+entity adder_module is
     port (
         in_Adder_In  : in std_logic_vector(31 downto 0);
         out_Adder_Out : out std_logic_vector(31 downto 0)
     );
-end entity ADDER_4_Module;
+end entity adder_module;
 
-architecture df of ADDER_4_Module is
+architecture df of adder_module is
 begin
     out_Adder_Out <= std_logic_vector(unsigned(in_Adder_In) + 4);
 end df;
