@@ -6,7 +6,7 @@ use std.textio.all;
 entity memory_inst is
   port (
     adress    : in std_logic_vector(7 downto 0);
-    instr_out : out std_logic_vector(31 downto 0);
+    instr_out : out std_logic_vector(31 downto 0)
   );
 end entity memory_inst;
 
@@ -19,7 +19,7 @@ architecture memI_arch of memory_inst is
     variable text_line : line;
     variable rom_content : rom;
    
-  begin
+    begin
     for i in 0 to ((2**adress`length)-1) loop
       readline(text_file, text_line);
       hread(text_line, rom_content(i));

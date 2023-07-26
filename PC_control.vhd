@@ -7,8 +7,7 @@ entity pc_control is
     pc_branch : in std_logic;
     pc_jals   : in std_logic_vector(1 downto 0);
     pc_zero   : in std_logic;
-    pc_en     : out std_logic;
-
+    pc_en     : out std_logic
   );
 end entity pc_control;
 

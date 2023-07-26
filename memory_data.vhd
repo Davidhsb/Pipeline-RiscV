@@ -8,7 +8,7 @@ entity memory_data is
     write_enable : in std_logic;
     clock        : in std_logic;
     data_in      : in std_logic_vector(31 downto 0);
-    data_out     : out std_logic_vector(32 downto 0);
+    data_out     : out std_logic_vector(32 downto 0)
   );
 end entity memory_data;
 
