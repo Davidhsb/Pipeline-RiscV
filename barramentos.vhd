@@ -24,12 +24,12 @@ begin
     process (clk)
     begin
         if rising_edge(clk) then
-            PC_out        <= PC_in;
+            PC_out              <= PC_in;
             Instruction_out     <= Instruction_in;
-            PC_PLUS_4_out <= PC_PLUS_4_in;
-            rs1_out       <= Instruction_in(19 downto 15);
-            rs2_out       <= Instruction_in(24 downto 20);
-            rd_out        <= Instruction_in(11 downto 7);
+            PC_PLUS_4_out       <= PC_PLUS_4_in;
+            rs1_out             <= Instruction_in(19 downto 15);
+            rs2_out             <= Instruction_in(24 downto 20);
+            rd_out              <= Instruction_in(11 downto 7);
         end if;
     end process;
 end df;
@@ -54,14 +54,22 @@ entity InstructionDecodeExecutePipeline is
         instr_out       : out std_logic_vector(31 downto 0);
         PC_PLUS_4_out   : out std_logic_vector(31 downto 0);
 
-        -- control
-        ALUSrc          : out std_logic;
-        ALUOp           : out std_logic_vector(1 downto 0);
-        Branch          : out std_logic;
-        Jal             : out std_logic_vector(1 downto 0);
-        MemWrite        : out std_logic;
-        RegWrite        : out std_logic;
-        ResultSrc       : out std_logic_vector(2 downto 0)
+        -- Controle
+        ALUSrc_in          : in std_logic;
+        ALUOp_in           : in std_logic_vector(1 downto 0);
+        Branch_in          : in std_logic;
+        Jal_in             : in std_logic_vector(1 downto 0);
+        MemWrite_in        : in std_logic;
+        RegWrite_in        : in std_logic;
+        ResultSrc_in       : in std_logic_vector(2 downto 0)
+
+        ALUSrc_out          : out std_logic;
+        ALUOp_out           : out std_logic_vector(1 downto 0);
+        Branch_out          : out std_logic;
+        Jal_out             : out std_logic_vector(1 downto 0);
+        MemWrite_out        : out std_logic;
+        RegWrite_out        : out std_logic;
+        ResultSrc_out       : out std_logic_vector(2 downto 0)
     );
 end entity;
 
@@ -78,14 +86,14 @@ begin
             instr_out        <= instr_in;
             PC_PLUS_4_out    <= PC_PLUS_4_in;
 
-            -- Control
-            ALUSrc           <= '0';
-            ALUOp            <= "00";
-            Branch           <= '0'; 
-            Jal              <= "00";
-            MemWrite         <= '0';
-            RegWrite         <= '0';
-            ResultSrc        <= "000";
+            -- Controle
+            ALUSrc_out           <= ALUSrc_in;
+            ALUOp_out            <= ALUOp_in;
+            Branch_out           <= Branch_in; 
+            Jal_out              <= Jal_in;
+            MemWrite_out         <= MemWrite_in;
+            RegWrite_out         <= RegWrite_in;
+            ResultSrc_out        <= ResultSrc_in;
         end if;
     end process;
 end df;
@@ -111,12 +119,18 @@ entity ExecuteMemoryPipeline is
         PC_PLUS_4_out   : out std_logic_vector(31 downto 0);
         address_out     : out std_logic_vector(7 downto 0);
 
-        -- control
-        Branch          : out std_logic;
-        Jal             : out std_logic_vector(1 downto 0);
-        MemWrite        : out std_logic;
-        RegWrite        : out std_logic;
-        ResultSrc       : out std_logic_vector(2 downto 0)
+        -- Controle
+        Branch_in          : in std_logic;
+        Jal_in             : in std_logic_vector(1 downto 0);
+        MemWrite_in        : in std_logic;
+        RegWrite_in        : in std_logic;
+        ResultSrc_in       : in std_logic_vector(2 downto 0)
+
+        Branch_out          : out std_logic;
+        Jal_out             : out std_logic_vector(1 downto 0);
+        MemWrite_out        : out std_logic;
+        RegWrite_out        : out std_logic;
+        ResultSrc_out       : out std_logic_vector(2 downto 0)
     );
 end entity;
 
@@ -134,12 +148,12 @@ begin
             PC_PLUS_4_out   <= PC_PLUS_4_in;
             address_out     <= Alu_in(7 downto 0);
 
-            -- Control
-            Branch          <= '0';
-            Jal             <= "00"; 
-            MemWrite        <= '0';
-            RegWrite        <= '0';
-            ResultSrc       <= "000"; 
+            -- Controle
+            Branch_out          <= Branch_in;
+            Jal_out             <= Jal_in; 
+            MemWrite_out        <= MemWrite_in;
+            RegWrite_out        <= RegWrite_in;
+            ResultSrc_out       <= ResultSrc_in; 
         end if;
     end process;
 end df;
@@ -162,10 +176,13 @@ entity MemoryWriteBackPipeline is
         imm_out            : out std_logic_vector(31 downto 0);
         PC_PLUS_4_out      : out std_logic_vector(31 downto 0);
 
-        -- Control
-        
-        RegWrite           : out std_logic;
-        ResultSrc          : out std_logic_vector(2 downto 0)
+        -- Controle
+
+        RegWrite_in           : in std_logic;
+        ResultSrc_in          : in std_logic_vector(2 downto 0)      
+
+        RegWrite_out           : out std_logic;
+        ResultSrc_out          : out std_logic_vector(2 downto 0)
     );
 end entity;
 
@@ -174,14 +191,14 @@ begin
     process (clk)
     begin
         if rising_edge(clk) then
-            mem_data_out       <= mem_data_in;
-            Alu_out            <= Alu_in;
-            rd_out             <= rd_in;
-            PC_plus_Imm_out    <= PC_plus_Imm_in;
-            imm_out            <= imm_in; 
-            PC_PLUS_4_out      <= PC_PLUS_4_in;
-            RegWrite           <= '0';
-            ResultSrc          <= "000";
+            mem_data_out           <= mem_data_in;
+            Alu_out                <= Alu_in;
+            rd_out                 <= rd_in;
+            PC_plus_Imm_out        <= PC_plus_Imm_in;
+            imm_out                <= imm_in; 
+            PC_PLUS_4_out          <= PC_PLUS_4_in;
+            RegWrite_out           <= RegWrite_in;
+            ResultSrc_out          <= ResultSrc_in;
         end if;
     end process;
 end df;

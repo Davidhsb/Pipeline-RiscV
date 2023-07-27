@@ -1,0 +1,21 @@
+Address     Code        Basic                        Line Source
+
+0x00000000  0x00000013  addi x0,x0,0                 5        nop
+0x00000004  0x006283b3  add x7,x5,x6                 7        add t2, t0, t1  # t2 = t0 + t1
+0x00000008  0x003e0e93  addi x29,x28,3               10       addi t4, t3, 3  # t4 = t3 + 3
+0x0000000c  0x41ff0bb3  sub x23,x30,x31              13       sub s7, t5, t6  # t7 = t5 - t6
+0x00000010  0x019c7d33  and x26,x24,x25              16       and s10, s8, s9  # t10 = t8 AND t9
+0x00000014  0x00adfd93  andi x27,x27,10              19       andi s11, s11, 10  # t12 = t11 AND 1001 (9 em decimal)
+0x00000018  0x01234437  lui x8,0x00001234            22       lui s0, 0x1234   # Carrega o valor 0x12340000 nos 20 bits mais significativos de t13
+0x0000001c  0x01eeafb3  slt x31,x29,x30              25       slt t6, t4, t5  # t16 = (t14 < t15) ? 1 : 0
+0x00000020  0x018a6bb3  or x23,x20,x24               28       or s7, s4, s8 
+0x00000024  0x00146913  ori x18,x8,1                 31       ori s2, s0, 1 
+0x00000028  0x017ccdb3  xor x27,x25,x23              34       xor s11, s9, s7  # t24 = t22 XOR t23
+0x0000002c  0x00cacb13  xori x22,x21,12              37       xori s6, s5, 12  # t26 = t25 XOR 1001 (5 em decimal)
+0x00000030  0x00239313  slli x6,x7,2                 40       slli t1, t2, 2  # t28 = t27 << 2 (48 em decimal)
+0x00000034  0x002e5293  srli x5,x28,2                43       srli t0, t3, 2  # t30 = t29 >> 2 (3 em decimal)
+0x00000038  0x401ad293  srai x5,x21,1                46       srai t0, s5, 1  # t0 = t31 >> 1 (-5 em decimal)
+0x0000003c  0x00a32393  slti x7,x6,10                49       slti t2, t1, 10  # t2 = (t1 < 10) ? 1 : 0
+0x00000040  0x01de3f33  sltu x30,x28,x29             52       sltu t5, t3, t4  # t5 = (t3 < t4) ? 1 : 0
+0x00000044  0x00afbb93  sltiu x23,x31,10             55       sltiu s7, t6, 10  # t7 = (t6 < 10) ? 1 : 0
+0x00000048  0x01234c17  auipc x24,0x00001234         58       auipc s8, 0x1234
