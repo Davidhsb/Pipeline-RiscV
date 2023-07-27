@@ -7,7 +7,7 @@ entity pc_control is
     pc_branch : in std_logic;
     pc_jals   : in std_logic_vector(1 downto 0);
     pc_zero   : in std_logic;
-    pc_en     : out std_logic
+    pc_en     : out std_logic_vector(1 downto 0)
   );
 end entity pc_control;
 
@@ -17,13 +17,13 @@ begin
 
   process(pc_branch, pc_jals, pc_zero) begin
 
-    if(pc_branch and not(pc_zero)) then -- Branch
+    if(pc_branch = '1' and not pc_zero = '1') then -- Branch
       pc_en <= "01";
 
-    elsif(pc_jals == "01") then -- Jal
+    elsif(pc_jals = "01") then -- Jal
       pc_en <= "01";
 
-    elsif(pc_jals == "10") then --Jalr
+    elsif(pc_jals = "10") then --Jalr
       pc_en <= "10";
     
     else            -- PC + 4

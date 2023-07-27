@@ -117,7 +117,7 @@ signal XRegs_ro1_bus, XRegs_ro2_bus : std_logic_vector(31 downto 0);
 component immGen is
   port (
     instr : in  std_logic_vector(31 downto 0);
-    imm32 : out signed(31 downto 0)
+    imm32 : out std_logic_vector(31 downto 0)
     );
 end component;
 signal GEN_IMM_imm32_bus : std_logic_vector(31 downto 0);
@@ -148,7 +148,7 @@ component InstructionDecodeExecutePipeline is
 		Jal_in             : in std_logic_vector(1 downto 0);
 		MemWrite_in        : in std_logic;
 		RegWrite_in        : in std_logic;
-		ResultSrc_in       : in std_logic_vector(2 downto 0)
+		ResultSrc_in       : in std_logic_vector(2 downto 0);
 
 		ALUSrc_out          : out std_logic;
 		ALUOp_out           : out std_logic_vector(1 downto 0);
@@ -241,7 +241,7 @@ component ExecuteMemoryPipeline is
 		Jal_in             : in std_logic_vector(1 downto 0);
 		MemWrite_in        : in std_logic;
 		RegWrite_in        : in std_logic;
-		ResultSrc_in       : in std_logic_vector(2 downto 0)
+		ResultSrc_in       : in std_logic_vector(2 downto 0);
 
 		Branch_out          : out std_logic;
 		Jal_out             : out std_logic_vector(1 downto 0);
@@ -271,7 +271,7 @@ component pc_control is
     pc_branch : in std_logic;
     pc_jals   : in std_logic_vector(1 downto 0);
     pc_zero   : in std_logic;
-    pc_en     : out std_logic
+    pc_en     : out std_logic_vector(1 downto 0)
   );
 end component;
 signal PC_Control_en_bus : std_logic_vector(1 downto 0) := "00";
@@ -282,7 +282,7 @@ component memory_data is
     write_enable : in std_logic;
     clock        : in std_logic;
     data_in      : in std_logic_vector(31 downto 0);
-    data_out     : out std_logic_vector(32 downto 0)
+    data_out     : out std_logic_vector(31 downto 0)
   );
 end component;
 signal MD_dataout_bus : std_logic_vector(31 downto 0);
@@ -307,7 +307,7 @@ component MemoryWriteBackPipeline is
 		-- Controle
 
 		RegWrite_in           : in std_logic;
-		ResultSrc_in          : in std_logic_vector(2 downto 0)      
+		ResultSrc_in          : in std_logic_vector(2 downto 0);    
 
 		RegWrite_out           : out std_logic;
 		ResultSrc_out          : out std_logic_vector(2 downto 0)

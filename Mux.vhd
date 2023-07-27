@@ -30,6 +30,10 @@ begin
     end process;
 end df;
 
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
 -- ULA MUX
 
 entity MUX_ALU_Module is
@@ -52,6 +56,10 @@ begin
         end if;
     end process;
 end df;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 -- MUX WB
 entity MUX_XREG_Module is
@@ -84,4 +92,5 @@ begin
                 out_XREGSMUX_Out <= in_Imm_In; -- Select Immediate value (default case)
         end case;
     end process;
-end df
+    
+end df;

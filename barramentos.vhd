@@ -13,8 +13,8 @@ entity InstructionFetchDecodePipeline is
         PC_out         : out std_logic_vector(31 downto 0);
         Instruction_out: out std_logic_vector(31 downto 0);
         PC_PLUS_4_out  : out std_logic_vector(31 downto 0);
-        ro1_out        : out std_logic_vector(4 downto 0);
-        ro2_out        : out std_logic_vector(4 downto 0);
+        rs1_out        : out std_logic_vector(4 downto 0);
+        rs2_out        : out std_logic_vector(4 downto 0);
         rd_out         : out std_logic_vector(4 downto 0)
     );
 end entity;
@@ -27,12 +27,16 @@ begin
             PC_out              <= PC_in;
             Instruction_out     <= Instruction_in;
             PC_PLUS_4_out       <= PC_PLUS_4_in;
-            ro1_out             <= Instruction_in(19 downto 15);
-            ro2_out             <= Instruction_in(24 downto 20);
+            rs1_out             <= Instruction_in(19 downto 15);
+            rs2_out             <= Instruction_in(24 downto 20);
             rd_out              <= Instruction_in(11 downto 7);
         end if;
     end process;
 end df;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 -- ID_EX Pipeline:
 entity InstructionDecodeExecutePipeline is
@@ -61,15 +65,15 @@ entity InstructionDecodeExecutePipeline is
         Jal_in             : in std_logic_vector(1 downto 0);
         MemWrite_in        : in std_logic;
         RegWrite_in        : in std_logic;
-        ResultSrc_in       : in std_logic_vector(2 downto 0)
+        ResultSrc_in       : in std_logic_vector(2 downto 0);
 
-        ALUSrc_out          : out std_logic;
-        ALUOp_out           : out std_logic_vector(1 downto 0);
-        Branch_out          : out std_logic;
-        Jal_out             : out std_logic_vector(1 downto 0);
-        MemWrite_out        : out std_logic;
-        RegWrite_out        : out std_logic;
-        ResultSrc_out       : out std_logic_vector(2 downto 0)
+        ALUSrc_out         : out std_logic;
+        ALUOp_out          : out std_logic_vector(1 downto 0);
+        Branch_out         : out std_logic;
+        Jal_out            : out std_logic_vector(1 downto 0);
+        MemWrite_out       : out std_logic;
+        RegWrite_out       : out std_logic;
+        ResultSrc_out      : out std_logic_vector(2 downto 0)
     );
 end entity;
 
@@ -87,16 +91,20 @@ begin
             PC_PLUS_4_out    <= PC_PLUS_4_in;
 
             -- Controle
-            ALUSrc_out           <= ALUSrc_in;
-            ALUOp_out            <= ALUOp_in;
-            Branch_out           <= Branch_in; 
-            Jal_out              <= Jal_in;
-            MemWrite_out         <= MemWrite_in;
-            RegWrite_out         <= RegWrite_in;
-            ResultSrc_out        <= ResultSrc_in;
+            ALUSrc_out        <= ALUSrc_in;
+            ALUOp_out         <= ALUOp_in;
+            Branch_out        <= Branch_in; 
+            Jal_out           <= Jal_in;
+            MemWrite_out      <= MemWrite_in;
+            RegWrite_out      <= RegWrite_in;
+            ResultSrc_out     <= ResultSrc_in;
         end if;
     end process;
 end df;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 -- EX_MEM Pipeline:
 entity ExecuteMemoryPipeline is
@@ -124,7 +132,7 @@ entity ExecuteMemoryPipeline is
         Jal_in             : in std_logic_vector(1 downto 0);
         MemWrite_in        : in std_logic;
         RegWrite_in        : in std_logic;
-        ResultSrc_in       : in std_logic_vector(2 downto 0)
+        ResultSrc_in       : in std_logic_vector(2 downto 0);
 
         Branch_out          : out std_logic;
         Jal_out             : out std_logic_vector(1 downto 0);
@@ -158,6 +166,10 @@ begin
     end process;
 end df;
 
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
 -- MEM_WB Pipeline:
 entity MemoryWriteBackPipeline is
     port (
@@ -179,7 +191,7 @@ entity MemoryWriteBackPipeline is
         -- Controle
 
         RegWrite_in           : in std_logic;
-        ResultSrc_in          : in std_logic_vector(2 downto 0)      
+        ResultSrc_in          : in std_logic_vector(2 downto 0);    
 
         RegWrite_out           : out std_logic;
         ResultSrc_out          : out std_logic_vector(2 downto 0)

@@ -12,9 +12,12 @@ end entity adder_module;
 
 architecture df of adder_module is
 begin
-    out_Adder_Out <= std_logic_vector(unsigned(in_Adder_In) + 4);
+    out_Adder_Out <= std_logic_vector(signed(in_Adder_In) + 4);
 end df;
 
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 -- Adder for PC + Immediate (ADDER_PC_IMM)
 entity ADDER_PC_IMM_Module is
@@ -27,5 +30,5 @@ end entity ADDER_PC_IMM_Module;
 
 architecture df of ADDER_PC_IMM_Module is
 begin
-    out_PC_IMM_Adder_Out <= std_logic_vector(unsigned(in_PC_IMM_Adder_PC) + signed(in_PC_IMM_Adder_Imm));
+    out_PC_IMM_Adder_Out <= std_logic_vector(signed(in_PC_IMM_Adder_PC) + signed(in_PC_IMM_Adder_Imm));
 end df;

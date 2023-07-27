@@ -6,7 +6,7 @@ use IEEE.numeric_std.all;
 entity immGen is 
   port (
     instr : in  std_logic_vector(31 downto 0);
-    imm32 : out signed(31 downto 0)
+    imm32 : out std_logic_vector(31 downto 0)
     );
 end entity;
 
@@ -41,10 +41,10 @@ architecture immGen_arch of immGen is
                     UNK_type when others;
 
     with instrType select
-      imm32   <=  I when I_type,
-                  S when S_type,
-                  SB when SB_type,
-                  U when U_type,
-                  UJ when UJ_type,
-                  R when others;
+      imm32   <=  std_logic_vector(I) when I_type,
+                  std_logic_vector(S) when S_type,
+                  std_logic_vector(SB)  when SB_type,
+                  std_logic_vector(U)  when U_type,
+                  std_logic_vector(UJ)  when UJ_type,
+                  std_logic_vector(R)  when others;
 end immGen_arch;

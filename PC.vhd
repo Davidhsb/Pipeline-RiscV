@@ -18,7 +18,7 @@ architecture pc_arch of pc is
 begin
 
   process(pc_clock, pc_reset) begin
-    if(pc_reset == '1') then
+    if(pc_reset = '1') then
       pc_out <= x"00000000";
     
     elsif (rising_edge(pc_clock)) then
