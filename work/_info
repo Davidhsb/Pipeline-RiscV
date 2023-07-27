@@ -14,7 +14,7 @@ Z0 w1690474027
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 503
+!i122 546
 Z4 dC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV
 Z5 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/adders.vhd
 Z6 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/adders.vhd
@@ -24,9 +24,9 @@ V`mK;0jhambM5He0TH2O3[2
 !s100 lkGj3`7;ZI^CE[ZSBP^R<3
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1690481510
+Z8 !s110 1690487364
 !i10b 1
-Z9 !s108 1690481510.000000
+Z9 !s108 1690487363.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/adders.vhd|
 Z11 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/adders.vhd|
 !i113 1
@@ -37,7 +37,7 @@ R1
 R2
 R3
 DEx4 work 12 adder_module 0 22 `mK;0jhambM5He0TH2O3[2
-!i122 503
+!i122 546
 l14
 L13 4
 V;fNUKj_n?mD9VS=H8b:Qh0
@@ -57,7 +57,7 @@ R0
 R1
 R2
 R3
-!i122 503
+!i122 546
 R4
 R5
 R6
@@ -80,7 +80,7 @@ R1
 R2
 R3
 DEx4 work 19 adder_pc_imm_module 0 22 2ZP9Om4YlP86V0PfYhJHg3
-!i122 503
+!i122 546
 l32
 L31 4
 VJcD:3Y3FooRB^2akUf6AD2
@@ -100,7 +100,7 @@ Z14 w1690396838
 R1
 R2
 R3
-!i122 506
+!i122 549
 R4
 Z15 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control_ula.vhd
 Z16 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control_ula.vhd
@@ -110,9 +110,9 @@ VAW;=6>WnzDHW@AP<n;<H`1
 !s100 bHI`9_M67gZO0ZUWCBfOH0
 R7
 32
-Z17 !s110 1690481511
+Z17 !s110 1690487370
 !i10b 1
-Z18 !s108 1690481511.000000
+Z18 !s108 1690487370.000000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control_ula.vhd|
 Z20 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control_ula.vhd|
 !i113 1
@@ -123,7 +123,7 @@ R1
 R2
 R3
 DEx4 work 11 control_ula 0 22 AW;=6>WnzDHW@AP<n;<H`1
-!i122 506
+!i122 549
 l18
 L13 84
 V;Wgjbh[hnKiiMIJTBaZ2I2
@@ -143,7 +143,7 @@ Z21 w1690397680
 R1
 R2
 R3
-!i122 505
+!i122 548
 R4
 Z22 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control.vhd
 Z23 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control.vhd
@@ -153,11 +153,11 @@ VN;Ca[iGzU5XzA=S0V?^RF3
 !s100 `R4UVT?g2U0>a5mQO_gVN1
 R7
 32
-R17
+R8
 !i10b 1
-R18
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control.vhd|
-Z25 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control.vhd|
+Z24 !s108 1690487364.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control.vhd|
+Z26 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control.vhd|
 !i113 1
 R12
 R13
@@ -166,41 +166,41 @@ R1
 R2
 R3
 DEx4 work 13 controlmodule 0 22 N;Ca[iGzU5XzA=S0V?^RF3
-!i122 505
+!i122 548
 l30
 L24 125
 VEKmGfL81WV]W@WITCKzLN1
 !s100 G]S8k<bW=UDXohB3Cog6z2
 R7
 32
-R17
+R8
 !i10b 1
-R18
 R24
 R25
+R26
 !i113 1
 R12
 R13
 Ecpu
-Z26 w1690481033
+Z27 w1690481033
 R1
 R2
 R3
-!i122 507
+!i122 550
 R4
-Z27 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd
-Z28 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd
+Z28 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd
+Z29 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd
 l0
 L6 1
 V3LHE@JknON98eTiJGV[6o2
 !s100 c37PIegeUKe>n8MFiB7VL1
 R7
 32
-R17
+Z30 !s110 1690487378
 !i10b 1
-R18
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd|
-Z30 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd|
+Z31 !s108 1690487378.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd|
+Z33 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd|
 !i113 1
 R12
 R13
@@ -209,30 +209,30 @@ R1
 R2
 R3
 DEx4 work 3 cpu 0 22 3LHE@JknON98eTiJGV[6o2
-!i122 507
+!i122 550
 l341
 L13 542
 VID46[h^IP9WABY_18LmzA1
 !s100 6G3?MM@dROz9a<M9N0M_U3
 R7
 32
-R17
-!i10b 1
-R18
-R29
 R30
+!i10b 1
+R31
+R32
+R33
 !i113 1
 R12
 R13
 Eexecutememorypipeline
-Z31 w1690481082
+Z34 w1690481082
 R1
 R2
 R3
-!i122 504
+!i122 547
 R4
-Z32 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd
-Z33 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd
+Z35 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd
+Z36 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd
 l0
 L110 1
 Vb_ocP7d@[kJ32Z0Q9H6B`0
@@ -241,9 +241,9 @@ R7
 32
 R8
 !i10b 1
-R9
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd|
-Z35 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd|
+R24
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd|
+Z38 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/barramentos.vhd|
 !i113 1
 R12
 R13
@@ -252,7 +252,7 @@ R1
 R2
 R3
 DEx4 work 21 executememorypipeline 0 22 b_ocP7d@[kJ32Z0Q9H6B`0
-!i122 504
+!i122 547
 l146
 L145 23
 VBadECc0g@o1[nZi]Sa7JQ0
@@ -261,32 +261,32 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
 Eimmgen
-Z36 w1690475240
+Z39 w1690475240
 R1
 R2
 R3
-!i122 508
+!i122 551
 R4
-Z37 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd
-Z38 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd
+Z40 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd
+Z41 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd
 l0
 L6 1
 V@aU@7D2D7[F9mUhdRbI7K0
 !s100 8[FNlg^ck5V83bMRVzo>E0
 R7
 32
-R17
+Z42 !s110 1690487385
 !i10b 1
-R18
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd|
-Z40 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd|
+Z43 !s108 1690487384.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd|
+Z45 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/immGen.vhd|
 !i113 1
 R12
 R13
@@ -295,30 +295,30 @@ R1
 R2
 R3
 DEx4 work 6 immgen 0 22 @aU@7D2D7[F9mUhdRbI7K0
-!i122 508
+!i122 551
 l21
 L13 38
 VV2C:G8[VbzgBaO;D@0iOV1
 !s100 f9JS3;:MN]jAm<SS5h2IC0
 R7
 32
-R17
+R42
 !i10b 1
-R18
-R39
-R40
+R43
+R44
+R45
 !i113 1
 R12
 R13
 Einstructiondecodeexecutepipeline
-R31
+R34
 R1
 R2
 R3
-!i122 504
+!i122 547
 R4
-R32
-R33
+R35
+R36
 l0
 L42 1
 V6=Ino_Rl=l2HAbWlfAHS63
@@ -327,9 +327,9 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
@@ -338,7 +338,7 @@ R1
 R2
 R3
 DEx4 work 32 instructiondecodeexecutepipeline 0 22 6=Ino_Rl=l2HAbWlfAHS63
-!i122 504
+!i122 547
 l81
 L80 24
 V=184a=U5XL80TYK]k:YRD2
@@ -347,21 +347,21 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
 Einstructionfetchdecodepipeline
-R31
+R34
 R1
 R2
 R3
-!i122 504
+!i122 547
 R4
-R32
-R33
+R35
+R36
 l0
 L6 1
 Vigc>964]oegRM@VSISK;M2
@@ -370,9 +370,9 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
@@ -381,7 +381,7 @@ R1
 R2
 R3
 DEx4 work 30 instructionfetchdecodepipeline 0 22 igc>964]oegRM@VSISK;M2
-!i122 504
+!i122 547
 l23
 L22 14
 V7Em?QhB<O]49D4hoeQ9<J0
@@ -390,32 +390,32 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
 Ememory_data
-Z41 w1690473386
+Z46 w1690473386
 R1
 R2
 R3
-!i122 509
+!i122 552
 R4
-Z42 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd
-Z43 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd
+Z47 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd
+Z48 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd
 l0
 L5 1
 V5JMK=QgOSPEZ=EWfL@VYV1
 !s100 W<GA?16fF;QZFRF5UPmT>0
 R7
 32
-Z44 !s110 1690481512
+R42
 !i10b 1
-R18
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd|
-Z46 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd|
+Z49 !s108 1690487385.000000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd|
+Z51 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_data.vhd|
 !i113 1
 R12
 R13
@@ -424,75 +424,75 @@ R1
 R2
 R3
 DEx4 work 11 memory_data 0 22 5JMK=QgOSPEZ=EWfL@VYV1
-!i122 509
+!i122 552
 l20
 L15 16
 V=J<UOKIzHaRVb4QQGO;hG3
 !s100 Ql2E[da`6aVKV]WnlaEhz1
 R7
 32
-R44
+R42
 !i10b 1
-R18
-R45
-R46
+R49
+R50
+R51
 !i113 1
 R12
 R13
 Ememory_inst
-Z47 w1690480757
-Z48 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z52 w1690481611
+Z53 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R1
 R2
 R3
-!i122 510
+!i122 553
 R4
-Z49 8C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd
-Z50 FC:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd
+Z54 8C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd
+Z55 FC:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd
 l0
-L72 1
-VT];SO?J16n7^9JQo5IR=R3
-!s100 Rh^eI:LB]1F?SKE@`1M2^2
+L7 1
+VnoCSjke55jG_?RD546Qfj0
+!s100 leM;M5:T1YK4bi]2ER86e0
 R7
 32
-R44
+Z56 !s110 1690487386
 !i10b 1
-Z51 !s108 1690481512.000000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd|
-Z53 !s107 C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd|
+R49
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd|
+Z58 !s107 C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd|
 !i113 1
 R12
 R13
 Amemi_arch
-R48
+R53
 R1
 R2
 R3
-DEx4 work 11 memory_inst 0 22 T];SO?J16n7^9JQo5IR=R3
-!i122 510
-l100
-L79 26
-VN?>>MFhY5iA:okVOI[Pk80
-!s100 86UDEK`akz9ic=8CzHOTk0
+DEx4 work 11 memory_inst 0 22 noCSjke55jG_?RD546Qfj0
+!i122 553
+l35
+L14 26
+VYn;380JfDD516Ffl5JzFL3
+!s100 ?o=cYMG6OPSaM;MSYEC3P0
 R7
 32
-R44
+R56
 !i10b 1
-R51
-R52
-R53
+R49
+R57
+R58
 !i113 1
 R12
 R13
 Ememorywritebackpipeline
-R31
+R34
 R1
 R2
 R3
-!i122 504
+!i122 547
 R4
-R32
-R33
+R35
+R36
 l0
 L174 1
 VSfm>YDQhY?YPzKb9]hC@d2
@@ -501,9 +501,9 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
@@ -512,7 +512,7 @@ R1
 R2
 R3
 DEx4 work 23 memorywritebackpipeline 0 22 Sfm>YDQhY?YPzKb9]hC@d2
-!i122 504
+!i122 547
 l202
 L201 16
 VQDS0Q`bO^fhTfmmGI21S33
@@ -521,32 +521,32 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
-R35
+R24
+R37
+R38
 !i113 1
 R12
 R13
 Emux_alu_module
-Z54 w1690473195
+Z59 w1690473195
 R1
 R2
 R3
-!i122 511
+!i122 554
 R4
-Z55 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd
-Z56 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd
+Z60 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd
+Z61 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd
 l0
 L39 1
 VePS^Tmlof8`ePkJ7N70oZ2
 !s100 E3Y3:]=bO[=DAbCFBDGJ^1
 R7
 32
-R44
+Z62 !s110 1690487388
 !i10b 1
-R51
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd|
-Z58 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd|
+Z63 !s108 1690487388.000000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd|
+Z65 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/Mux.vhd|
 !i113 1
 R12
 R13
@@ -555,41 +555,41 @@ R1
 R2
 R3
 DEx4 work 14 mux_alu_module 0 22 ePS^Tmlof8`ePkJ7N70oZ2
-!i122 511
+!i122 554
 l49
 L48 11
 V>]VWDQef=28jkJmO_[6NQ1
 !s100 [;jQ8[:98VZi]oK5mV[9k2
 R7
 32
-R44
+R62
 !i10b 1
-R51
-R57
-R58
+R63
+R64
+R65
 !i113 1
 R12
 R13
 Emux_pc_module
-R54
+R59
 R1
 R2
 R3
-!i122 511
+!i122 554
 R4
-R55
-R56
+R60
+R61
 l0
 L7 1
 VcE7R8dTBg>cD`@n8=3A2l0
 !s100 2nD5?hfbmK1kaz>KJczD`2
 R7
 32
-R44
+R62
 !i10b 1
-R51
-R57
-R58
+R63
+R64
+R65
 !i113 1
 R12
 R13
@@ -598,41 +598,41 @@ R1
 R2
 R3
 DEx4 work 13 mux_pc_module 0 22 cE7R8dTBg>cD`@n8=3A2l0
-!i122 511
+!i122 554
 l18
 L17 15
 VTXMz7n^]>>mo60nXkShTN0
 !s100 OahM:KfWAg;eBPV;b`5UM3
 R7
 32
-R44
+R62
 !i10b 1
-R51
-R57
-R58
+R63
+R64
+R65
 !i113 1
 R12
 R13
 Emux_xreg_module
-R54
+R59
 R1
 R2
 R3
-!i122 511
+!i122 554
 R4
-R55
-R56
+R60
+R61
 l0
 L65 1
 VDK6IlBE=LjiD<gmk`R0WV1
 !s100 @[G==_^MC=BID3WQh]4H?0
 R7
 32
-R44
+R62
 !i10b 1
-R51
-R57
-R58
+R63
+R64
+R65
 !i113 1
 R12
 R13
@@ -641,41 +641,41 @@ R1
 R2
 R3
 DEx4 work 15 mux_xreg_module 0 22 DK6IlBE=LjiD<gmk`R0WV1
-!i122 511
+!i122 554
 l78
 L77 20
 VKL>b<dBmWdUz8[DX?ZT663
 !s100 CN;0_]Gj5VbmKmAHJabHI2
 R7
 32
-R44
+R62
 !i10b 1
-R51
-R57
-R58
+R63
+R64
+R65
 !i113 1
 R12
 R13
 Epc
-Z59 w1690471493
+Z66 w1690471493
 R1
 R2
 R3
-!i122 512
+!i122 555
 R4
-Z60 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd
-Z61 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd
+Z67 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd
+Z68 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd
 l0
 L5 1
 VSQTV=Ydd9P3X0nZOm:bYH1
 !s100 Be4R2QCL=@]VgTT59e3Hb0
 R7
 32
-R44
+Z69 !s110 1690487392
 !i10b 1
-R51
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd|
-Z63 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd|
+Z70 !s108 1690487392.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd|
+Z72 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC.vhd|
 !i113 1
 R12
 R13
@@ -684,41 +684,41 @@ R1
 R2
 R3
 DEx4 work 2 pc 0 22 SQTV=Ydd9P3X0nZOm:bYH1
-!i122 512
+!i122 555
 l18
 L15 17
 Vz@QZBM67>OobSjb9[KhS^2
 !s100 f<7IdoSWDY5<@k5eCJ_813
 R7
 32
-R44
+R69
 !i10b 1
-R51
-R62
-R63
+R70
+R71
+R72
 !i113 1
 R12
 R13
 Epc_control
-Z64 w1690479634
+Z73 w1690479634
 R1
 R2
 R3
-!i122 513
+!i122 556
 R4
-Z65 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd
-Z66 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd
+Z74 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd
+Z75 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd
 l0
 L5 1
 VQaG]MdohP98=kRbA@SX1J3
 !s100 TWJRgL[@e1=jUm>K^DD8]2
 R7
 32
-Z67 !s110 1690481513
+R69
 !i10b 1
-R51
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd|
-Z69 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd|
+R70
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd|
+Z77 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd|
 !i113 1
 R12
 R13
@@ -727,41 +727,41 @@ R1
 R2
 R3
 DEx4 work 10 pc_control 0 22 QaG]MdohP98=kRbA@SX1J3
-!i122 513
+!i122 556
 l16
 L14 23
 V:R7]cC11i4V@?dLX6JKjh3
 !s100 nzgN>NLSCogW3aJ:IM9`71
 R7
 32
-R67
-!i10b 1
-R51
-R68
 R69
+!i10b 1
+R70
+R76
+R77
 !i113 1
 R12
 R13
 Etestbench
-Z70 w1690404231
+Z78 w1690404231
 R1
 R2
 R3
-!i122 514
+!i122 557
 R4
-Z71 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd
-Z72 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd
+Z79 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd
+Z80 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd
 l0
 L5 1
 V0NKIG4FTnn4j=G8_z]zZ^3
 !s100 F:hB<^NCd[;3Wg7Rc9dS12
 R7
 32
-R67
+Z81 !s110 1690487393
 !i10b 1
-Z73 !s108 1690481513.000000
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd|
-Z75 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd|
+R70
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd|
+Z83 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd|
 !i113 1
 R12
 R13
@@ -770,41 +770,41 @@ R1
 R2
 R3
 DEx4 work 9 testbench 0 22 0NKIG4FTnn4j=G8_z]zZ^3
-!i122 514
+!i122 557
 l20
 L8 46
 V0kKV@6?1m@@690YC=fP^M0
 !s100 ZSocQ;iB[SIMMfS[kB01z0
 R7
 32
-R67
+R81
 !i10b 1
-R73
-R74
-R75
+R70
+R82
+R83
 !i113 1
 R12
 R13
 Eularv
-Z76 w1686750736
+Z84 w1686750736
 R1
 R2
 R3
-!i122 515
+!i122 558
 R4
-Z77 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd
-Z78 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd
+Z85 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd
+Z86 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd
 l0
 L5 1
 Vje_;6cLg@:C9k7L@XD2HI2
 !s100 z9UAcXBIa0lnj@?LJQ`2l1
 R7
 32
-R67
+R81
 !i10b 1
-R73
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd|
-Z80 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd|
+Z87 !s108 1690487393.000000
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd|
+Z89 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd|
 !i113 1
 R12
 R13
@@ -813,41 +813,41 @@ R1
 R2
 R3
 DEx4 work 5 ularv 0 22 je_;6cLg@:C9k7L@XD2HI2
-!i122 515
+!i122 558
 l17
 L15 30
 V3aMAUahTG0Ue@G8;Dlk[O1
 !s100 O8^S00=lj5`65=dDm1K6k2
 R7
 32
-R67
+R81
 !i10b 1
-R73
-R79
-R80
+R87
+R88
+R89
 !i113 1
 R12
 R13
 Exregs
-Z81 w1675197880
+Z90 w1675197880
 R1
 R2
 R3
-!i122 516
+!i122 559
 R4
-Z82 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd
-Z83 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd
+Z91 8C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd
+Z92 FC:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd
 l0
 L5 1
 VRnO6d3bF66V@jn`GbezFO1
 !s100 KNMgnFY3FU^7:^3QTD^O]2
 R7
 32
-R67
+R81
 !i10b 1
-R73
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd|
-Z85 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd|
+R87
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd|
+Z94 !s107 C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/XRegs.vhd|
 !i113 1
 R12
 R13
@@ -855,19 +855,19 @@ Abehavior
 R1
 R2
 R3
-Z86 DEx4 work 5 xregs 0 22 RnO6d3bF66V@jn`GbezFO1
-!i122 516
+Z95 DEx4 work 5 xregs 0 22 RnO6d3bF66V@jn`GbezFO1
+!i122 559
 l19
-Z87 L15 23
-Z88 VC@IjjzWRI__cPzdzG1dIN3
-Z89 !s100 e3VNEA3O8l1=Cd?VXC06G1
+Z96 L15 23
+Z97 VC@IjjzWRI__cPzdzG1dIN3
+Z98 !s100 e3VNEA3O8l1=Cd?VXC06G1
 R7
 32
-R67
+R81
 !i10b 1
-R73
-R84
-R85
+R87
+R93
+R94
 !i113 1
 R12
 R13

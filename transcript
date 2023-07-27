@@ -696,3 +696,219 @@ run
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MI
+run
+add wave -position insertpoint sim:/testbench/dut/*
+run
+# Compile of memory_inst.vhd was successful.
+vsim -gui work.testbench
+# End time: 15:31:11 on Jul 27,2023, Elapsed time: 0:18:57
+# Errors: 0, Warnings: 6
+# vsim -gui work.testbench 
+# Start time: 15:31:11 on Jul 27,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(arch)
+# Loading work.cpu(structure_pipeline)
+# Loading work.mux_pc_module(df)
+# Loading work.pc(pc_arch)
+# Loading work.adder_module(df)
+# Loading ieee.std_logic_textio(body)
+# Loading work.memory_inst(memi_arch)
+# Loading work.instructionfetchdecodepipeline(df)
+# Loading work.controlmodule(cont)
+# Loading work.xregs(behavior)
+# Loading work.immgen(immgen_arch)
+# Loading work.instructiondecodeexecutepipeline(df)
+# Loading work.adder_pc_imm_module(df)
+# Loading work.mux_alu_module(df)
+# Loading work.ularv(behavior)
+# Loading work.control_ula(control_ula_arch)
+# Loading work.executememorypipeline(df)
+# Loading work.pc_control(arch_ctr)
+# Loading work.memory_data(mem_arch)
+# Loading work.memorywritebackpipeline(df)
+# Loading work.mux_xreg_module(df)
+add wave -position insertpoint sim:/testbench/dut/*
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MD
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MI
+# Compile of adders.vhd was successful.
+# Compile of barramentos.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of control_ula.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of immGen.vhd was successful.
+# Compile of memory_data.vhd was successful.
+# Compile of memory_inst.vhd was successful.
+# Compile of Mux.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of PC_control.vhd was successful.
+# Compile of testbench.vhd was successful.
+# Compile of ulaRv.vhd was successful.
+# Compile of XRegs.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# End time: 16:31:41 on Jul 27,2023, Elapsed time: 1:00:30
+# Errors: 0, Warnings: 6
+# vsim -gui work.testbench 
+# Start time: 16:31:42 on Jul 27,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(arch)
+# Loading work.cpu(structure_pipeline)
+# Loading work.mux_pc_module(df)
+# Loading work.pc(pc_arch)
+# Loading work.adder_module(df)
+# Loading ieee.std_logic_textio(body)
+# Loading work.memory_inst(memi_arch)
+# Loading work.instructionfetchdecodepipeline(df)
+# Loading work.controlmodule(cont)
+# Loading work.xregs(behavior)
+# Loading work.immgen(immgen_arch)
+# Loading work.instructiondecodeexecutepipeline(df)
+# Loading work.adder_pc_imm_module(df)
+# Loading work.mux_alu_module(df)
+# Loading work.ularv(behavior)
+# Loading work.control_ula(control_ula_arch)
+# Loading work.executememorypipeline(df)
+# Loading work.pc_control(arch_ctr)
+# Loading work.memory_data(mem_arch)
+# Loading work.memorywritebackpipeline(df)
+# Loading work.mux_xreg_module(df)
+add wave -position insertpoint sim:/testbench/dut/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MD
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MI
+# Can't move the Now cursor.
+# Compile of adders.vhd was successful.
+# Compile of barramentos.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of control_ula.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of immGen.vhd was successful.
+# Compile of memory_data.vhd was successful.
+vsim -gui work.testbench
+# End time: 16:45:05 on Jul 27,2023, Elapsed time: 0:13:23
+# Errors: 0, Warnings: 5
+# vsim -gui work.testbench 
+# Start time: 16:45:05 on Jul 27,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(arch)
+# Loading work.cpu(structure_pipeline)
+# Loading work.mux_pc_module(df)
+# Loading work.pc(pc_arch)
+# Loading work.adder_module(df)
+# Loading ieee.std_logic_textio(body)
+# Loading work.memory_inst(memi_arch)
+# Loading work.instructionfetchdecodepipeline(df)
+# Loading work.controlmodule(cont)
+# Loading work.xregs(behavior)
+# Loading work.immgen(immgen_arch)
+# Loading work.instructiondecodeexecutepipeline(df)
+# Loading work.adder_pc_imm_module(df)
+# Loading work.mux_alu_module(df)
+# Loading work.ularv(behavior)
+# Loading work.control_ula(control_ula_arch)
+# Loading work.executememorypipeline(df)
+# Loading work.pc_control(arch_ctr)
+# Loading work.memory_data(mem_arch)
+# Loading work.memorywritebackpipeline(df)
+# Loading work.mux_xreg_module(df)
+# Compile of memory_inst.vhd was successful.
+# Compile of Mux.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of PC_control.vhd was successful.
+# Compile of testbench.vhd was successful.
+add wave -position insertpoint sim:/testbench/dut/*
+# Compile of ulaRv.vhd was successful.
+# Compile of XRegs.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MD
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MI
+# Compile of adders.vhd was successful.
+# Compile of barramentos.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of control_ula.vhd was successful.
+vsim -gui work.testbench
+# ** Error: Aes eao
+#        Unable to replace existing ini file (C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/pipeline.mpf).  File can not be renamed.
+# End time: 16:49:40 on Jul 27,2023, Elapsed time: 0:04:35
+# Errors: 1, Warnings: 6
+# vsim -gui work.testbench 
+# Start time: 16:49:40 on Jul 27,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(arch)
+# Loading work.cpu(structure_pipeline)
+# Loading work.mux_pc_module(df)
+# Loading work.pc(pc_arch)
+# Loading work.adder_module(df)
+# Loading ieee.std_logic_textio(body)
+# Loading work.memory_inst(memi_arch)
+# Loading work.instructionfetchdecodepipeline(df)
+# Loading work.controlmodule(cont)
+# Loading work.xregs(behavior)
+# Loading work.immgen(immgen_arch)
+# Loading work.instructiondecodeexecutepipeline(df)
+# Loading work.adder_pc_imm_module(df)
+# Loading work.mux_alu_module(df)
+# Loading work.ularv(behavior)
+# Loading work.control_ula(control_ula_arch)
+# Loading work.executememorypipeline(df)
+# Loading work.pc_control(arch_ctr)
+# Loading work.memory_data(mem_arch)
+# Loading work.memorywritebackpipeline(df)
+# Loading work.mux_xreg_module(df)
+# Compile of CPU.vhd was successful.
+# Compile of immGen.vhd was successful.
+# Compile of memory_data.vhd was successful.
+# Compile of memory_inst.vhd was successful.
+add wave -position insertpoint sim:/testbench/dut/*
+# Compile of Mux.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of PC_control.vhd was successful.
+# Compile of testbench.vhd was successful.
+# Compile of ulaRv.vhd was successful.
+# Compile of XRegs.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MD
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MI
