@@ -177,10 +177,10 @@ signal ID_EX_CONTROL_ResultSrc_out_bus : std_logic_vector(2 downto 0);
 -------------------------------------------- EX ---------------------------------------------------
 
 component ADDER_PC_IMM_Module is
-  port (
-    in_PC_IMM_Adder_PC   : in std_logic_vector(31 downto 0);
-    in_PC_IMM_Adder_Imm  : in std_logic_vector(31 downto 0);
-    out_PC_IMM_Adder_Out : out std_logic_vector(31 downto 0)
+	port (
+		PC  : in std_logic_vector(31 downto 0);
+		imm : in std_logic_vector(31 downto 0);
+		adder_out : out std_logic_vector(31 downto 0)
 );
 end component;
 signal PC_IMM_Adder_out_bus : std_logic_vector(31 downto 0);
@@ -447,9 +447,9 @@ begin
 -------------------------------------------- EX ---------------------------------------------------
 
 	PC_IMM_Adder: ADDER_PC_IMM_Module port map (
-		in_PC_IMM_Adder_PC => ID_EX_PC_out_bus,
-		in_PC_IMM_Adder_Imm => ID_EX_imm_out_bus,
-		out_PC_IMM_Adder_Out => PC_IMM_Adder_out_bus
+		PC => ID_EX_PC_out_bus,
+		imm => ID_EX_imm_out_bus,
+		adder_out => PC_IMM_Adder_out_bus
 	);
 
 	ALUMUX: MUX_ALU_Module port map (
