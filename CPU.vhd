@@ -54,18 +54,18 @@ end component;
 signal MI_Instr_out_bus : std_logic_vector(31 downto 0);
 
 component InstructionFetchDecodePipeline is
-  port (
-    clk            : in std_logic;
-    PC_in          : in std_logic_vector(31 downto 0);
-    Instruction_in : in std_logic_vector(31 downto 0);
-    PC_PLUS_4_in   : in std_logic_vector(31 downto 0);
+	port (
+		clk            : in std_logic;
+		PC_in          : in std_logic_vector(31 downto 0);
+		Instruction_in : in std_logic_vector(31 downto 0);
+		PC_PLUS_4_in   : in std_logic_vector(31 downto 0);
 
-    PC_out         : out std_logic_vector(31 downto 0);
-    Instruction_out: out std_logic_vector(31 downto 0);
-    PC_PLUS_4_out  : out std_logic_vector(31 downto 0);
-    rs1_out        : out std_logic_vector(4 downto 0);
-    rs2_out        : out std_logic_vector(4 downto 0);
-    rd_out         : out std_logic_vector(4 downto 0)
+		PC_out         : out std_logic_vector(31 downto 0);
+		Instruction_out: out std_logic_vector(31 downto 0);
+		PC_PLUS_4_out  : out std_logic_vector(31 downto 0);
+		rs1_out        : out std_logic_vector(4 downto 0);
+		rs2_out        : out std_logic_vector(4 downto 0);
+		rd_out         : out std_logic_vector(4 downto 0)
 );
 end component;
 signal IF_ID_PC_out_bus : std_logic_vector(31 downto 0);
@@ -124,46 +124,40 @@ signal GEN_IMM_imm32_bus : std_logic_vector(31 downto 0);
 
 component InstructionDecodeExecutePipeline is
 	port (
-  		ID_EX_clk : in std_logic;
+		clk             : in std_logic;
+		PC_in           : in std_logic_vector(31 downto 0);
+		ro1_in          : in std_logic_vector(31 downto 0);
+		ro2_in          : in std_logic_vector(31 downto 0);
+		rd_in           : in std_logic_vector(4 downto 0);
+		imm_in          : in std_logic_vector(31 downto 0);
+		instr_in        : in std_logic_vector(31 downto 0);
+		PC_PLUS_4_in    : in std_logic_vector(31 downto 0);
 
-  		ID_EX_PC_in : in std_logic_vector(31 downto 0);
-        ID_EX_PC_out : out std_logic_vector(31 downto 0);
-        
-        ID_EX_ro1_in : in std_logic_vector(31 downto 0);
-        ID_EX_ro1_out : out std_logic_vector(31 downto 0);
-        
-        ID_EX_ro2_in : in std_logic_vector(31 downto 0);
-        ID_EX_ro2_out : out std_logic_vector(31 downto 0);
-        
-        ID_EX_rd_in : in std_logic_vector(4 downto 0);
-        ID_EX_rd_out : out std_logic_vector(4 downto 0);
-        
-        ID_EX_imm_in : in std_logic_vector(31 downto 0);
-        ID_EX_imm_out : out std_logic_vector(31 downto 0);
-        
-        ID_EX_instr_in : in std_logic_vector(31 downto 0);
-        ID_EX_instr_out : out std_logic_vector(31 downto 0);
-        
-        ID_EX_PC_PLUS_4_in : in std_logic_vector(31 downto 0);
-        ID_EX_PC_PLUS_4_out : out std_logic_vector(31 downto 0);
+		PC_out          : out std_logic_vector(31 downto 0);
+		ro1_out         : out std_logic_vector(31 downto 0);
+		ro2_out         : out std_logic_vector(31 downto 0);
+		rd_out          : out std_logic_vector(4 downto 0);
+		imm_out         : out std_logic_vector(31 downto 0);
+		instr_out       : out std_logic_vector(31 downto 0);
+		PC_PLUS_4_out   : out std_logic_vector(31 downto 0);
 
-        -- control
-        ID_EX_CONTROL_ALUSrc_in : in std_logic;
-        ID_EX_CONTROL_ALUOp_in : in std_logic_vector(1 downto 0);
-        ID_EX_CONTROL_Branch_in : in std_logic;
-        ID_EX_CONTROL_Jal_in : in std_logic_vector(1 downto 0);
-        ID_EX_CONTROL_MemWrite_in : in std_logic;
-        ID_EX_CONTROL_RegWrite_in : in std_logic;
-        ID_EX_CONTROL_ResultSrc_in : in std_logic_vector(2 downto 0);
+		-- Controle
+		ALUSrc_in          : in std_logic;
+		ALUOp_in           : in std_logic_vector(1 downto 0);
+		Branch_in          : in std_logic;
+		Jal_in             : in std_logic_vector(1 downto 0);
+		MemWrite_in        : in std_logic;
+		RegWrite_in        : in std_logic;
+		ResultSrc_in       : in std_logic_vector(2 downto 0)
 
-        ID_EX_CONTROL_ALUSrc_out : out std_logic;
-        ID_EX_CONTROL_ALUOp_out : out std_logic_vector(1 downto 0);
-        ID_EX_CONTROL_Branch_out : out std_logic;
-        ID_EX_CONTROL_Jal_out : out std_logic_vector(1 downto 0);
-        ID_EX_CONTROL_MemWrite_out : out std_logic;
-        ID_EX_CONTROL_RegWrite_out : out std_logic;
-        ID_EX_CONTROL_ResultSrc_out : out std_logic_vector(2 downto 0)
- 	);
+		ALUSrc_out          : out std_logic;
+		ALUOp_out           : out std_logic_vector(1 downto 0);
+		Branch_out          : out std_logic;
+		Jal_out             : out std_logic_vector(1 downto 0);
+		MemWrite_out        : out std_logic;
+		RegWrite_out        : out std_logic;
+		ResultSrc_out       : out std_logic_vector(2 downto 0)
+);
 end component;
 signal ID_EX_PC_out_bus : std_logic_vector(31 downto 0);
 signal ID_EX_ro1_out_bus : std_logic_vector(31 downto 0);
@@ -222,46 +216,39 @@ component control_ula is
 end component;
 signal ALU_Control_out_bus : std_logic_vector(3 downto 0);
 
-component EX_MEM_PIPE is
+component ExecuteMemoryPipeline is
 	port (
-  		EX_MEM_clk : in std_logic;
+		clk             : in std_logic;
+		PC_plus_Imm_in  : in std_logic_vector(31 downto 0);
+		zero_in         : in std_logic;
+		ro2_in          : in std_logic_vector(31 downto 0);
+		rd_in           : in std_logic_vector(4 downto 0);
+		Alu_in          : in std_logic_vector(31 downto 0);
+		imm_in          : in std_logic_vector(31 downto 0);
+		PC_PLUS_4_in    : in std_logic_vector(31 downto 0);
 
-  		EX_MEM_PC_plus_Imm_in : in std_logic_vector(31 downto 0);
-        EX_MEM_Pc_plus_Imm_out : out std_logic_vector(31 downto 0);
+		PC_plus_Imm_out : out std_logic_vector(31 downto 0);
+		zero_out        : out std_logic;
+		ro2_out         : out std_logic_vector(31 downto 0);
+		rd_out          : out std_logic_vector(4 downto 0);
+		Alu_out         : out std_logic_vector(31 downto 0);
+		imm_out         : out std_logic_vector(31 downto 0);
+		PC_PLUS_4_out   : out std_logic_vector(31 downto 0);
+		address_out     : out std_logic_vector(7 downto 0);
 
-        EX_MEM_zero_in : in std_logic;
-        EX_MEM_zero_out : out std_logic;
+		-- Controle
+		Branch_in          : in std_logic;
+		Jal_in             : in std_logic_vector(1 downto 0);
+		MemWrite_in        : in std_logic;
+		RegWrite_in        : in std_logic;
+		ResultSrc_in       : in std_logic_vector(2 downto 0)
 
-        EX_MEM_ro2_in : in std_logic_vector(31 downto 0);
-        EX_MEM_ro2_out : out std_logic_vector(31 downto 0);
-
-        EX_MEM_rd_in : in std_logic_vector(4 downto 0);
-        EX_MEM_rd_out : out std_logic_vector(4 downto 0);
-
-        EX_MEM_Alu_in : in std_logic_vector(31 downto 0);
-        EX_MEM_Alu_out : out std_logic_vector(31 downto 0);
-
-        EX_MEM_imm_in : in std_logic_vector(31 downto 0);
-        EX_MEM_imm_out : out std_logic_vector(31 downto 0);
-
-        EX_MEM_PC_PLUS_4_in : in std_logic_vector(31 downto 0);
-        EX_MEM_PC_PLUS_4_out : out std_logic_vector(31 downto 0);
-
-        EX_MEM_address_out : out std_logic_vector(7 downto 0);
-
-        -- control
-        EX_MEM_CONTROL_Branch_in : in std_logic;
-        EX_MEM_CONTROL_Jal_in : in std_logic_vector(1 downto 0);
-        EX_MEM_CONTROL_MemWrite_in : in std_logic;
-        EX_MEM_CONTROL_RegWrite_in : in std_logic;
-        EX_MEM_CONTROL_ResultSrc_in : in std_logic_vector(2 downto 0);
-
-        EX_MEM_CONTROL_Branch_out : out std_logic;
-        EX_MEM_CONTROL_Jal_out : out std_logic_vector(1 downto 0);
-        EX_MEM_CONTROL_MemWrite_out : out std_logic;
-        EX_MEM_CONTROL_RegWrite_out : out std_logic;
-        EX_MEM_CONTROL_ResultSrc_out : out std_logic_vector(2 downto 0)
- 	);
+		Branch_out          : out std_logic;
+		Jal_out             : out std_logic_vector(1 downto 0);
+		MemWrite_out        : out std_logic;
+		RegWrite_out        : out std_logic;
+		ResultSrc_out       : out std_logic_vector(2 downto 0)
+);
 end component;
 signal EX_MEM_Pc_plus_Imm_out_bus : std_logic_vector(31 downto 0);
 signal EX_MEM_zero_out_bus : std_logic;
@@ -300,35 +287,31 @@ component memory_data is
 end component;
 signal MD_dataout_bus : std_logic_vector(31 downto 0);
 
-component MEM_WB_PIPE is
+component MemoryWriteBackPipeline is
 	port (
-  		MEM_WB_clk : in std_logic;
+		clk                : in std_logic;
+		mem_data_in        : in std_logic_vector(31 downto 0);
+		Alu_in             : in std_logic_vector(31 downto 0);
+		rd_in              : in std_logic_vector(4 downto 0);
+		PC_plus_Imm_in     : in std_logic_vector(31 downto 0);
+		imm_in             : in std_logic_vector(31 downto 0);
+		PC_PLUS_4_in       : in std_logic_vector(31 downto 0);
 
-  		MEM_WB_mem_data_in : in std_logic_vector(31 downto 0);
-        MEM_WB_mem_data_out : out std_logic_vector(31 downto 0);
+		mem_data_out       : out std_logic_vector(31 downto 0);
+		Alu_out            : out std_logic_vector(31 downto 0);
+		rd_out             : out std_logic_vector(4 downto 0);
+		PC_plus_Imm_out    : out std_logic_vector(31 downto 0);
+		imm_out            : out std_logic_vector(31 downto 0);
+		PC_PLUS_4_out      : out std_logic_vector(31 downto 0);
 
-        MEM_WB_Alu_in : in std_logic_vector(31 downto 0);
-        MEM_WB_Alu_out : out std_logic_vector(31 downto 0);
+		-- Controle
 
-        MEM_WB_rd_in : in std_logic_vector(4 downto 0);
-        MEM_WB_rd_out : out std_logic_vector(4 downto 0);
+		RegWrite_in           : in std_logic;
+		ResultSrc_in          : in std_logic_vector(2 downto 0)      
 
-        MEM_WB_PC_plus_Imm_in : in std_logic_vector(31 downto 0);
-        MEM_WB_Pc_plus_Imm_out : out std_logic_vector(31 downto 0);
-
-        MEM_WB_imm_in : in std_logic_vector(31 downto 0);
-        MEM_WB_imm_out : out std_logic_vector(31 downto 0);
-
-        MEM_WB_PC_PLUS_4_in : in std_logic_vector(31 downto 0);
-        MEM_WB_PC_PLUS_4_out : out std_logic_vector(31 downto 0);
-
-        -- control
-        MEM_WB_CONTROL_RegWrite_in : in std_logic;
-        MEM_WB_CONTROL_ResultSrc_in : in std_logic_vector(2 downto 0);
-
-        MEM_WB_CONTROL_RegWrite_out : out std_logic;
-        MEM_WB_CONTROL_ResultSrc_out : out std_logic_vector(2 downto 0)
- 	);
+		RegWrite_out           : out std_logic;
+		ResultSrc_out          : out std_logic_vector(2 downto 0)
+);
 end component;
 signal MEM_WB_mem_data_out_bus : std_logic_vector(31 downto 0);
 signal MEM_WB_Alu_out_bus : std_logic_vector(31 downto 0);
@@ -386,17 +369,17 @@ begin
 		instr_out => MI_Instr_out_bus
 	);
 
-	IF_ID: IF_ID_PIPE port map (
-		IF_ID_clk => clock,
-		IF_ID_PC_in => PCReg_out_bus,
-		IF_ID_PC_out => IF_ID_PC_out_bus,
-		IF_ID_Instr_in => MI_Instr_out_bus,
-		IF_ID_Instr_out => IF_ID_Instr_out_bus,
-		IF_ID_rs1_out => IF_ID_rs1_out_bus,
-		IF_ID_rs2_out => IF_ID_rs2_out_bus,
-		IF_ID_rd_out => IF_ID_rd_out_bus,
-		IF_ID_PC_PLUS_4_in => PCAdder_out_bus,
-		IF_ID_PC_PLUS_4_out => IF_ID_PC_PLUS_4_out_bus
+	IF_ID: InstructionFetchDecodePipeline port map (
+		clk => clock,
+		PC_in => PCReg_out_bus,
+		PC_out => IF_ID_PC_out_bus,
+		Instruction_in => MI_Instr_out_bus,
+		Instruction_out => IF_ID_Instr_out_bus,
+		rs1_out => IF_ID_rs1_out_bus,
+		rs2_out => IF_ID_rs2_out_bus,
+		rd_out => IF_ID_rd_out_bus,
+		PC_PLUS_4_in => PCAdder_out_bus,
+		PC_PLUS_4_out => IF_ID_PC_PLUS_4_out_bus
 	);
 
 -------------------------------------------- ID ---------------------------------------------------
@@ -429,36 +412,36 @@ begin
 		imm32 => GEN_IMM_imm32_bus
 	);
 	
-	ID_EX: ID_EX_PIPE port map (
-		ID_EX_clk => clock,
-		ID_EX_PC_in => IF_ID_PC_out_bus,
-		ID_EX_PC_out => ID_EX_PC_out_bus,
-		ID_EX_ro1_in => XRegs_ro1_bus,
-		ID_EX_ro1_out => ID_EX_ro1_out_bus,
-		ID_EX_ro2_in => XRegs_ro2_bus,
-		ID_EX_ro2_out => ID_EX_ro2_out_bus,
-		ID_EX_rd_in => IF_ID_rd_out_bus,
-		ID_EX_rd_out => ID_EX_rd_out_bus,
-		ID_EX_imm_in => GEN_IMM_imm32_bus,
-		ID_EX_imm_out => ID_EX_imm_out_bus,
-		ID_EX_instr_in => IF_ID_Instr_out_bus,
-		ID_EX_instr_out => ID_EX_instr_out_bus,
-		ID_EX_PC_PLUS_4_in => IF_ID_PC_PLUS_4_out_bus,
-		ID_EX_PC_PLUS_4_out => ID_EX_PC_PLUS_4_out_bus,
-		ID_EX_CONTROL_ALUSrc_in => CONTROL_ALUSrc_bus,
-		ID_EX_CONTROL_ALUSrc_out => ID_EX_CONTROL_ALUSrc_out_bus,
-		ID_EX_CONTROL_ALUOp_in => CONTROL_ALUOp_bus,
-		ID_EX_CONTROL_ALUOp_out => ID_EX_CONTROL_ALUOp_out_bus,
-		ID_EX_CONTROL_Branch_in => CONTROL_Branch_bus,
-		ID_EX_CONTROL_Branch_out => ID_EX_CONTROL_Branch_out_bus,
-		ID_EX_CONTROL_Jal_in => CONTROL_Jal_bus,
-		ID_EX_CONTROL_Jal_out => ID_EX_CONTROL_Jal_out_bus,
-		ID_EX_CONTROL_MemWrite_in => CONTROL_MemWrite_bus,
-		ID_EX_CONTROL_MemWrite_out => ID_EX_CONTROL_MemWrite_out_bus,
-		ID_EX_CONTROL_RegWrite_in => CONTROL_RegWrite_bus,
-		ID_EX_CONTROL_RegWrite_out => ID_EX_CONTROL_RegWrite_out_bus,
-		ID_EX_CONTROL_ResultSrc_in => CONTROL_ResultSrc_bus,
-		ID_EX_CONTROL_ResultSrc_out => ID_EX_CONTROL_ResultSrc_out_bus
+	ID_EX: InstructionDecodeExecutePipeline port map (
+		clk => clock,
+		PC_in => IF_ID_PC_out_bus,
+		PC_out => ID_EX_PC_out_bus,
+		ro1_in => XRegs_ro1_bus,
+		ro1_out => ID_EX_ro1_out_bus,
+		ro2_in => XRegs_ro2_bus,
+		ro2_out => ID_EX_ro2_out_bus,
+		rd_in => IF_ID_rd_out_bus,
+		rd_out => ID_EX_rd_out_bus,
+		imm_in => GEN_IMM_imm32_bus,
+		imm_out => ID_EX_imm_out_bus,
+		instr_in => IF_ID_Instr_out_bus,
+		instr_out => ID_EX_instr_out_bus,
+		PC_PLUS_4_in => IF_ID_PC_PLUS_4_out_bus,
+		PC_PLUS_4_out => ID_EX_PC_PLUS_4_out_bus,
+		ALUSrc_in => CONTROL_ALUSrc_bus,
+		ALUSrc_out => ID_EX_CONTROL_ALUSrc_out_bus,
+		ALUOp_in => CONTROL_ALUOp_bus,
+		ALUOp_out => ID_EX_CONTROL_ALUOp_out_bus,
+		Branch_in => CONTROL_Branch_bus,
+		Branch_out => ID_EX_CONTROL_Branch_out_bus,
+		Jal_in => CONTROL_Jal_bus,
+		Jal_out => ID_EX_CONTROL_Jal_out_bus,
+		MemWrite_in => CONTROL_MemWrite_bus,
+		MemWrite_out => ID_EX_CONTROL_MemWrite_out_bus,
+		RegWrite_in => CONTROL_RegWrite_bus,
+		RegWrite_out => ID_EX_CONTROL_RegWrite_out_bus,
+		ResultSrc_in => CONTROL_ResultSrc_bus,
+		ResultSrc_out => ID_EX_CONTROL_ResultSrc_out_bus
 	);
 
 -------------------------------------------- EX ---------------------------------------------------
@@ -490,33 +473,33 @@ begin
 		control_out => ALU_Control_out_bus
 	);
 
-	EX_MEM: EX_MEM_PIPE port map (
-		EX_MEM_clk => clock,
-		EX_MEM_PC_plus_Imm_in => PC_IMM_Adder_out_bus,
-		EX_MEM_Pc_plus_Imm_out => EX_MEM_Pc_plus_Imm_out_bus,
-		EX_MEM_zero_in => ALU_zero_bus,
-		EX_MEM_zero_out => EX_MEM_zero_out_bus,
-		EX_MEM_ro2_in => ID_EX_ro2_out_bus,
-		EX_MEM_ro2_out => EX_MEM_ro2_out_bus,
-		EX_MEM_rd_in => ID_EX_rd_out_bus,
-		EX_MEM_rd_out => EX_MEM_rd_out_bus,
-		EX_MEM_Alu_in => ALU_Z_bus,
-		EX_MEM_Alu_out => EX_MEM_Alu_out_bus,
-		EX_MEM_imm_in => ID_EX_imm_out_bus,
-		EX_MEM_imm_out => EX_MEM_imm_out_bus,
-		EX_MEM_PC_PLUS_4_in => ID_EX_PC_PLUS_4_out_bus,
-		EX_MEM_PC_PLUS_4_out => EX_MEM_PC_PLUS_4_out_bus,
-		EX_MEM_address_out => EX_MEM_address_out_bus,
-		EX_MEM_CONTROL_Branch_in => ID_EX_CONTROL_Branch_out_bus,
-		EX_MEM_CONTROL_Branch_out => EX_MEM_CONTROL_Branch_out_bus,
-		EX_MEM_CONTROL_Jal_in => ID_EX_CONTROL_Jal_out_bus,
-		EX_MEM_CONTROL_Jal_out => EX_MEM_CONTROL_Jal_out_bus,
-		EX_MEM_CONTROL_MemWrite_in => ID_EX_CONTROL_MemWrite_out_bus,
-		EX_MEM_CONTROL_MemWrite_out => EX_MEM_CONTROL_MemWrite_out_bus,
-		EX_MEM_CONTROL_RegWrite_in => ID_EX_CONTROL_RegWrite_out_bus,
-		EX_MEM_CONTROL_RegWrite_out => EX_MEM_CONTROL_RegWrite_out_bus,
-		EX_MEM_CONTROL_ResultSrc_in => ID_EX_CONTROL_ResultSrc_out_bus,
-		EX_MEM_CONTROL_ResultSrc_out => EX_MEM_CONTROL_ResultSrc_out_bus
+	EX_MEM: ExecuteMemoryPipeline port map (
+		clk => clock,
+		PC_plus_Imm_in => PC_IMM_Adder_out_bus,
+		PC_plus_Imm_out => EX_MEM_Pc_plus_Imm_out_bus,
+		zero_in => ALU_zero_bus,
+		zero_out => EX_MEM_zero_out_bus,
+		ro2_in => ID_EX_ro2_out_bus,
+		ro2_out => EX_MEM_ro2_out_bus,
+		rd_in => ID_EX_rd_out_bus,
+		rd_out => EX_MEM_rd_out_bus,
+		Alu_in => ALU_Z_bus,
+		Alu_out => EX_MEM_Alu_out_bus,
+		imm_in => ID_EX_imm_out_bus,
+		imm_out => EX_MEM_imm_out_bus,
+		PC_PLUS_4_in => ID_EX_PC_PLUS_4_out_bus,
+		PC_PLUS_4_out => EX_MEM_PC_PLUS_4_out_bus,
+		address_out => EX_MEM_address_out_bus,
+		Branch_in => ID_EX_CONTROL_Branch_out_bus,
+		Branch_out => EX_MEM_CONTROL_Branch_out_bus,
+		Jal_in => ID_EX_CONTROL_Jal_out_bus,
+		Jal_out => EX_MEM_CONTROL_Jal_out_bus,
+		MemWrite_in => ID_EX_CONTROL_MemWrite_out_bus,
+		MemWrite_out => EX_MEM_CONTROL_MemWrite_out_bus,
+		RegWrite_in => ID_EX_CONTROL_RegWrite_out_bus,
+		RegWrite_out => EX_MEM_CONTROL_RegWrite_out_bus,
+		ResultSrc_in => ID_EX_CONTROL_ResultSrc_out_bus,
+		ResultSrc_out => EX_MEM_CONTROL_ResultSrc_out_bus
 	);
 
 -------------------------------------------- MEM ---------------------------------------------------
@@ -536,24 +519,24 @@ begin
 		data_out => MD_dataout_bus
 	);
 
-	MEM_WB: MEM_WB_PIPE port map (
-		MEM_WB_clk => clock,
-		MEM_WB_mem_data_in => MD_dataout_bus,
-		MEM_WB_mem_data_out => MEM_WB_mem_data_out_bus,
-		MEM_WB_Alu_in => EX_MEM_Alu_out_bus,
-		MEM_WB_Alu_out => MEM_WB_Alu_out_bus,
-		MEM_WB_rd_in => EX_MEM_rd_out_bus,
-		MEM_WB_rd_out => MEM_WB_rd_out_bus,
-		MEM_WB_PC_plus_Imm_in => EX_MEM_Pc_plus_Imm_out_bus,
-		MEM_WB_Pc_plus_Imm_out => MEM_WB_Pc_plus_Imm_out_bus,
-		MEM_WB_imm_in => EX_MEM_imm_out_bus,
-		MEM_WB_imm_out => MEM_WB_imm_out_bus,
-		MEM_WB_PC_PLUS_4_in => EX_MEM_PC_PLUS_4_out_bus,
-		MEM_WB_PC_PLUS_4_out => MEM_WB_PC_PLUS_4_out_bus,
-		MEM_WB_CONTROL_RegWrite_in => EX_MEM_CONTROL_RegWrite_out_bus,
-		MEM_WB_CONTROL_RegWrite_out => MEM_WB_CONTROL_RegWrite_out_bus,
-		MEM_WB_CONTROL_ResultSrc_in => EX_MEM_CONTROL_ResultSrc_out_bus,
-		MEM_WB_CONTROL_ResultSrc_out => MEM_WB_CONTROL_ResultSrc_out_bus
+	MEM_WB: MemoryWriteBackPipeline port map (
+		clk => clock,
+		mem_data_in => MD_dataout_bus,
+		mem_data_out => MEM_WB_mem_data_out_bus,
+		Alu_in => EX_MEM_Alu_out_bus,
+		Alu_out => MEM_WB_Alu_out_bus,
+		rd_in => EX_MEM_rd_out_bus,
+		rd_out => MEM_WB_rd_out_bus,
+		PC_plus_Imm_in => EX_MEM_Pc_plus_Imm_out_bus,
+		Pc_plus_Imm_out => MEM_WB_Pc_plus_Imm_out_bus,
+		imm_in => EX_MEM_imm_out_bus,
+		imm_out => MEM_WB_imm_out_bus,
+		PC_PLUS_4_in => EX_MEM_PC_PLUS_4_out_bus,
+		PC_PLUS_4_out => MEM_WB_PC_PLUS_4_out_bus,
+		RegWrite_in => EX_MEM_CONTROL_RegWrite_out_bus,
+		RegWrite_out => MEM_WB_CONTROL_RegWrite_out_bus,
+		ResultSrc_in => EX_MEM_CONTROL_ResultSrc_out_bus,
+		ResultSrc_out => MEM_WB_CONTROL_ResultSrc_out_bus
 	);
 
 -------------------------------------------- WB ---------------------------------------------------
