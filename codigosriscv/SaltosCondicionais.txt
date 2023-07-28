@@ -1,0 +1,13 @@
+
+0x00400000  0x00a00293  addi x5,x0,10                5        li t0, 10            # Carrega o valor 10 em $t0
+0x00400004  0x00a00313  addi x6,x0,10                6        li t1, 10            # Carrega o valor 10 em $t1
+0x00400008  0x02628463  beq x5,x6,0x00000028         7        beq t0, t1, label1  # Salta para label1 se $t0 for igual a $t1
+0x0040000c  0x00000013  addi x0,x0,0                 8        nop  
+0x00400010  0x00000013  addi x0,x0,0                 9        nop
+0x00400014  0x00000013  addi x0,x0,0                 10       nop
+0x00400018  0x00500393  addi x7,x0,5                 14       li t2, 5             # Carrega o valor 5 em $t2
+0x0040001c  0x00700e13  addi x28,x0,7                15       li t3, 7             # Carrega o valor 7 em $t3
+0x00400020  0x01c39863  bne x7,x28,0x00000010        16       bne t2, t3, label2  # Salta para label2 se $t2 for diferente de $t3
+0x00400024  0x00000013  addi x0,x0,0                 17       nop                   # Nop (no operation)
+0x00400028  0x00000013  addi x0,x0,0                 18       nop
+0x0040002c  0x00000013  addi x0,x0,0                 19       nop

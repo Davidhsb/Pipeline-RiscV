@@ -5,4 +5,4 @@
 0x00000008  0x00000013  addi x0,x0,0x00000000 5    	nop
 0x0000000c  0x00000013  addi x0,x0,0x00000000 6    	nop
 0x00000010  0x00000013  addi x0,x0,0x00000000 7    	nop
-0x00000014  0xfff302e7  jalr x5,x6,0xffffffff 8    	jalr t0, t1, -1
+0x00000014  0x004002ef  jal x5,0x00000002     8    	jal t0, label
