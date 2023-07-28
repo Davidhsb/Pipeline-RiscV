@@ -62,6 +62,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity MemoryWriteBackPipeline
 -- Compiling architecture df of MemoryWriteBackPipeline
 
+} {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/CPU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CPU
+-- Compiling architecture structure_pipeline of CPU
+
 } {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/testbench.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -70,6 +79,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity testbench
 -- Compiling architecture arch of testbench
+
+} {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control_ula.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/control_ula.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity control_ula
+-- Compiling architecture control_ula_arch of control_ula
 
 } {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/ulaRv.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -89,6 +107,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity memory_data
 -- Compiling architecture mem_arch of memory_data
 
+} {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/adders.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/adders.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder_module
+-- Compiling architecture df of adder_module
+-- Compiling entity ADDER_PC_IMM_Module
+-- Compiling architecture df of ADDER_PC_IMM_Module
+
 } {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/PC_control.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -98,7 +127,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity pc_control
 -- Compiling architecture arch_ctr of pc_control
 
-} {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_inst.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\david\OneDrive\Documentos\Faculdade\2022.2\Organizacao e Arquitetura de Computadores\Pipeline RiscV\memory_inst.vhd}
+} {} {}} {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_inst.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/david/OneDrive/Documentos/Faculdade/2022.2/Organizacao e Arquitetura de Computadores/Pipeline RiscV/memory_inst.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO

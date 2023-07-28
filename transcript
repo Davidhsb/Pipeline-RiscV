@@ -51,3 +51,6 @@ run
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/BancoRegs
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/MI
+# WARNING: No extended dataflow license exists
+# End time: 03:38:43 on Jul 28,2023, Elapsed time: 1:55:22
+# Errors: 0, Warnings: 8
